@@ -6,7 +6,7 @@ body {
     color: #f0f8ff; /* aliceblue */
     background-color: rgb(75, 0, 7);
     margin: 0;
-    padding: 80px 20px; /* Réduit légèrement pour être plus équilibré */
+    padding-top: 100px; /* Réduit légèrement pour être plus équilibré */
 }
 
 /* --- Structure globale --- */
@@ -259,6 +259,82 @@ body {
     text-align: center;
 }
 
+footer {
+    text-align: center;
+    border-top: 1px solid rgba(250, 197, 131, 0.2);
+    margin-top: 100px;
+    padding: 60px 20px 40px 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+footer #contacts h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+footer #contacts p {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgb(248, 186, 110);
+    margin: 0;
+}
+
+footer .bloc-contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+footer .bloc-contacts .contact {
+    font-family: "Varela Round", sans-serif;
+    border-radius: 6px;
+    background-color: rgb(248, 186, 110);
+    transition: 0.3s all ease;
+    box-shadow: 0 4px 12px rgba(248, 186, 110, 0.15);
+}
+
+footer .bloc-contacts a {
+    color: rgb(75, 0, 7);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+    padding: 12px 24px;
+}
+
+footer .bloc-contacts .contact:hover {
+    transform: translateY(-2px);
+    background-color: rgb(254, 202, 137);
+    box-shadow: 0 6px 15px rgba(254, 202, 137, 0.3);
+}
+
+footer #logo_prom_footer {
+    width: 100px;
+    height: auto;
+    padding-top: 40px;
+}
+
+footer .informations p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+}
+
+footer .informations a {
+    color: rgb(248, 186, 110);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer .informations a:hover {
+    text-decoration: underline;
+}
+
 /* ==========================================================================
    8. ADAPTATION MOBILE (ÉCRANS DE MOINS DE 600PX)
    ========================================================================== */
@@ -308,5 +384,30 @@ body {
     
     .standard form label .precision {
         font-size: 11px;
+    }
+
+
+    footer {
+            margin-top: 60px;
+            padding: 40px 15px 30px 15px;
+        }
+
+    footer #contacts h1 {
+        font-size: 24px;
+    }
+
+    footer .bloc-contacts {
+        flex-direction: column; /* Met "Appelez-nous" et "Email" l'un sous l'autre */
+        align-items: center;
+        gap: 10px;
+    }
+
+    footer .bloc-contacts .contact {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    footer .bloc-contacts a {
+        padding: 10px 15px;
     }
 }
